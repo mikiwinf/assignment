@@ -115,7 +115,7 @@ void findStudent(std::vector<Student>& students) {
             return;
         }
     }
-    std::cout << "Cannot find the ID" << std::endl;
+    std::cout << "ID not found" << std::endl;
 }
 
 void menu(std::vector<Student>& students) {
@@ -141,6 +141,7 @@ void menu(std::vector<Student>& students) {
                 break;
             case 3:
                 sortAscending(students);
+                printStudentsInfo(students);
                 break;
             case 4:
                 findStudent(students);
