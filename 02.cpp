@@ -98,7 +98,7 @@ void printStudentsInfo(const std::vector<Student>& students) {
 
 void sortAscending(std::vector<Student>& students) {
     std::sort(students.begin(), students.end(),
-        [] (const auto& a, const auto& b) {
+        [](const auto& a, const auto& b) {
             return a.average < b.average;
         });
 }
